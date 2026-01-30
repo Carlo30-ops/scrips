@@ -1,12 +1,16 @@
 # -*- mode: python ; coding: utf-8 -*-
-# PyInstaller spec para Generador de Reportes COTU
-# Genera un .exe único que incluye Python, tkinter, pandas y openpyxl.
+# PyInstaller spec para Generador de Reportes COTU (fusionado con ttkbootstrap)
+# Genera un .exe único que incluye Python, tkinter, pandas, openpyxl y ttkbootstrap.
+
+from PyInstaller.utils.hooks import collect_all
+
+datas, binaries, hiddenimports = collect_all('ttkbootstrap')
 
 a = Analysis(
     ['generador_facturas_cotu.py'],
     pathex=[],
-    binaries=[],
-    datas=[],
+    binaries=binaries,
+    datas=datas,
     hiddenimports=[
         'pandas',
         'openpyxl',
@@ -16,7 +20,7 @@ a = Analysis(
         'openpyxl.utils',
         'openpyxl.worksheet',
         'openpyxl.workbook',
-    ],
+    ] + hiddenimports,
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],

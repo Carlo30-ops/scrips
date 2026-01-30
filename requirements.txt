@@ -1,4 +1,6 @@
 pandas>=2.0.0
 openpyxl>=3.1.0
-# Nota: tkcalendar y ttkthemes son opcionales
-# El código funciona sin ellas usando implementaciones nativas
+ttkbootstrap>=1.10.0
+
+# Tests
+pytest>=7.0.0

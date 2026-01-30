@@ -11,6 +11,7 @@ venv_build/
 *.egg-info/
 .eggs/
 dist-html/
+*.egg
 
 # Build / instalador
 build/
@@ -18,8 +19,9 @@ dist/
 dist_installer/
 *.spec.bak
 *.exe
+*.manifest
 
-# Config local (carpeta, tema, etc.)
+# Config local (carpeta, tema, etc.) — no subir a repo
 config.json
 
 # IDE / OS
@@ -29,6 +31,22 @@ config.json
 *.swo
 .DS_Store
 Thumbs.db
+*.lnk
 
-# Logs (si se generan en proyecto)
+# Logs
 *.log
+
+# Tests y cobertura
+.pytest_cache/
+tests/tmp_cotu_test/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Carpeta duplicada (descarga/merge); el código activo está en la raíz
+scrips-main/
+
+# Archivos temporales de Inno Setup / compilación
+*.tmp
+*.tmp.*
