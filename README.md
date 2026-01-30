@@ -114,20 +114,7 @@ Recomendación: ejecutar los .bat desde CMD (no desde la terminal del IDE) y, si
 | [docs/ANALISIS_FUSION_PROYECTOS.md](docs/ANALISIS_FUSION_PROYECTOS.md) | Análisis de fusión de proyectos |
 | [docs/AUDITORIA_PROYECTO.md](docs/AUDITORIA_PROYECTO.md) | Auditoría del proyecto |
 
-## Publicar en GitHub
 
-Si es la primera vez que subes este proyecto:
-
-1. Crea un repositorio nuevo en GitHub (sin inicializar con README si ya tienes uno local).
-2. En la raíz del proyecto:
-   ```bash
-   git remote add origin https://github.com/TU_USUARIO/scrips.git
-   git branch -M main
-   git push -u origin main
-   ```
-3. Sustituye `TU_USUARIO/scrips` por la URL real de tu repositorio.
-
-Los archivos y carpetas listados en [.gitignore](.gitignore) (build, dist, config.json, etc.) no se subirán.
 
 ## Licencia
 
